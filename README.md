@@ -2,6 +2,8 @@
 
 Monitoring real-time content on twitter.
 
+![Demo](https://raw.githubusercontent.com/vitoravelino/twitter-live-feed/master/demo.gif)
+
 ## Requirements
 
 * [Node.js](http://nodejs.org/) (>= 6)
@@ -28,3 +30,11 @@ $ yarn run dev
 ```
 
 It will install the dependencies and run the servers. After that you'll be able to access the demo at http://localhost:5000.
+
+# Twitter Rate Limit
+
+Everytime a new hashtag is requested on the client, another request is done to Twitter Stream API. You gotta be aware that the stream api use is very restrict. If you don't see any new tweet coming, check if there's a 420 error on server console. That indicates that stream request was blocked due rate limit.
+
+More info at [Twitter Stream documentation](https://dev.twitter.com/streaming/overview/connecting#reconnecting).
+
+
