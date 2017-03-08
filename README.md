@@ -7,7 +7,7 @@ Monitoring real-time content on twitter.
 ## Requirements
 
 * [Node.js](http://nodejs.org/) (>= 6)
-* Twitter API keys
+* [Twitter API keys](https://apps.twitter.com)
 
 ## Cloning the repo
 
@@ -29,7 +29,7 @@ $ yarn install
 $ yarn run dev
 ```
 
-It will install the dependencies and run the servers. After that you'll be able to access the demo at http://localhost:5000.
+It will install the dependencies and run the servers. After that you'll be able to access the demo at [http://localhost:8080](http://localhost:8080).
 
 # Twitter Rate Limit
 
